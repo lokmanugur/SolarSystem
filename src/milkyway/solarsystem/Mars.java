@@ -12,7 +12,7 @@ package milkyway.solarsystem;
  */
 public class Mars extends AbstractPlanetWeightCalculator implements CalculateWeightStrategy{
 
-    private final double GRAVITY = 0.377;
+    private final double GRAVITY = PlanetsGravityRatio.valueOf("MARS").getRatio();;
     
     @Override
     public double calculate(double weight) {

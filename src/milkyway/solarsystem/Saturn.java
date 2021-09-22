@@ -11,7 +11,7 @@ package milkyway.solarsystem;
  */
 public class Saturn extends AbstractPlanetWeightCalculator implements CalculateWeightStrategy {
     
-    private final double GRAVITY=0.916;
+    private final double GRAVITY=PlanetsGravityRatio.valueOf("SATURN").getRatio();;
 
     @Override
     public double calculate(double weight) {

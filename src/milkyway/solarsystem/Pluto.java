@@ -11,7 +11,7 @@ package milkyway.solarsystem;
  */
 public class Pluto extends  AbstractPlanetWeightCalculator implements CalculateWeightStrategy{
     
-    private final double GRAVITY = 0.071;
+    private final double GRAVITY = PlanetsGravityRatio.valueOf("PLUTO").getRatio();;
 
     @Override
     public double calculate(double weight) {

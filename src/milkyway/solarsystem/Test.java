@@ -20,13 +20,13 @@ public class Test {
         System.out.println(solarSystem.calculateWeight("Mercury"));
         System.out.println(solarSystem.calculateWeight("Venus"));
         System.out.println(solarSystem.calculateWeight("Earth"));
-        System.out.println(solarSystem.calculateWeight("Moon",70));
+        System.out.println(solarSystem.calculateWeight("Moon"));
         System.out.println(solarSystem.calculateWeight("Mars"));
         System.out.println(solarSystem.calculateWeight("Jupiter"));
         System.out.println(solarSystem.calculateWeight("Saturn"));
-        System.out.println(solarSystem.calculateWeight("Uranus",50));
-        System.out.println(solarSystem.calculateWeight("Neptune",500));
-        System.out.println(solarSystem.calculateWeight("Pluto",100));
+        System.out.println(solarSystem.calculateWeight("Uranus"));
+        System.out.println(solarSystem.calculateWeight("Neptune"));
+        System.out.println(solarSystem.calculateWeight("Pluto"));
     }
     
 }

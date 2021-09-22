@@ -10,7 +10,7 @@ package milkyway.solarsystem;
  * @author Lokman Ugur <lokman.ugur@hotmail.com>
  */
 public class Neptune extends AbstractPlanetWeightCalculator implements CalculateWeightStrategy {
-    private final double GRAVITY = 1.12;
+    private final double GRAVITY = PlanetsGravityRatio.valueOf("NEPTUNE").getRatio();;
 
     @Override
     public double calculate(double weight) {

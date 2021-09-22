@@ -7,7 +7,8 @@ package milkyway.solarsystem;
  */
 public class Earth extends AbstractPlanetWeightCalculator implements CalculateWeightStrategy{
 
-    private final double GRAVITY = 1; 
+    private final double GRAVITY = PlanetsGravityRatio.valueOf("EARTH").getRatio();
+
     
     @Override
     public double calculate(double weight) {

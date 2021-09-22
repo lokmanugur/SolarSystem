@@ -12,7 +12,7 @@ package milkyway.solarsystem;
  */
 public class Mercury extends AbstractPlanetWeightCalculator implements CalculateWeightStrategy {
 
-    private final double GRAVITY = 0.378;
+    private final double GRAVITY = PlanetsGravityRatio.valueOf("MERCURY").getRatio();;
     
     @Override
     public double calculate(double weight) {

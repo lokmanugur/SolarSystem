@@ -11,7 +11,7 @@ package milkyway.solarsystem;
  */
 public class Jupiter extends AbstractPlanetWeightCalculator implements CalculateWeightStrategy{
     
-    private final double GRAVITY = 2.36;
+    private final double GRAVITY = PlanetsGravityRatio.valueOf("JUPITER").getRatio();;
 
     @Override
     public double calculate(double weight) {

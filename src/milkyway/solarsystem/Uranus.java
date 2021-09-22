@@ -11,7 +11,7 @@ package milkyway.solarsystem;
  */
 public class Uranus extends AbstractPlanetWeightCalculator implements CalculateWeightStrategy {
 
-    private final double GRAVITY = 0.889;
+    private final double GRAVITY = PlanetsGravityRatio.valueOf("URANUS").getRatio();;
     
     @Override
     public double calculate(double weight) {

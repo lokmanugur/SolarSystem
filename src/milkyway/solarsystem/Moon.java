@@ -12,7 +12,7 @@ package milkyway.solarsystem;
  */
 public class Moon extends AbstractPlanetWeightCalculator implements CalculateWeightStrategy {
 
-    private final double GRAVITY = 0.166;
+    private final double GRAVITY = PlanetsGravityRatio.valueOf("MOON").getRatio();;
     
     @Override
     public double calculate(double weight) {

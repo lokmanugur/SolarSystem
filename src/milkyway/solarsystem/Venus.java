@@ -11,7 +11,7 @@ package milkyway.solarsystem;
  */
 public class Venus extends AbstractPlanetWeightCalculator implements CalculateWeightStrategy {
 
-    private final double GRAVITY = 0.91;
+    private final double GRAVITY = PlanetsGravityRatio.valueOf("VENUS").getRatio();;
 
     @Override
     public double calculate(double weight) {
